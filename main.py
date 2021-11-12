@@ -1,5 +1,6 @@
-from database import add_entry, get_entries
+from database import create_table, add_entry, get_entries, close_database
 
+create_table()
 menu = """
 Please select one of the following option:
 1. Add new entry
@@ -33,3 +34,5 @@ while user_input != "3":
         print("Invalid options, please try again")
 
     user_input = input(menu)
+
+close_database()
