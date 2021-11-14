@@ -18,7 +18,8 @@ def prompt_new_entry():
 
 def view_entries(entries):
     for entry in entries:
-        print(f"{entry['date']}\n{entry['content']}")
+        print(f"-----------------------------")
+        print(f"{entry[1]} - {entry[0]}")
 
 
 welcome = "Welcome to your diary!"
